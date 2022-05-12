@@ -1,0 +1,4 @@
+@start /b gst-launch-1.0 gdiscreencapsrc x=3 y=3 width=957 height=597 cursor=TRUE ! video/x-raw,framerate=30/1 ! videoconvert ! avenc_mpeg4 ! rtspclientsink "location=rtsp://127.0.0.1:8558/mystream"
+@start /b gst-launch-1.0 gdiscreencapsrc x=961 y=3 width=957 height=597 cursor=TRUE ! video/x-raw,framerate=30/1 ! videoconvert ! avenc_mpeg4 ! rtspclientsink "location=rtsp://127.0.0.1:8559/mystream"
+@start /b gst-launch-1.0 gdiscreencapsrc x=3 y=601 width=957 height=597 cursor=TRUE ! video/x-raw,framerate=30/1 ! videoconvert ! avenc_mpeg4 ! rtspclientsink "location=rtsp://127.0.0.1:8560/mystream"
+@start /b gst-launch-1.0 gdiscreencapsrc x=961 y=601 width=957 height=597 cursor=TRUE ! video/x-raw,framerate=30/1 ! videoconvert ! avenc_mpeg4 ! rtspclientsink "location=rtsp://127.0.0.1:8561/mystream"
